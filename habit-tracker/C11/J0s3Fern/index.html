@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite + React + TS</title>
 </head>
+
 <body>
   <div id="root">
+    <h2>Habit Tracker</h2>
+
     <form id="habit_form">
       <label for="habit_name">Habit Name:</label>
       <input id="habit_name" name="habit_name" type="text" required />
@@ -15,10 +19,13 @@
       <input id="target_streak" required name="target_streak" min="0" max="10" type="number" />
       <button type="submit" id="submit_habit">Submit</button>
     </form>
+
     <ul id="habit_list">
       
     </ul>
+
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

@@ -13,8 +13,6 @@ form.addEventListener('submit', (event) => {
 
     habits.push(habit)
 
-
-
     console.log(JSON.stringify(habits))
 
     renderHabits(habits)
@@ -24,7 +22,6 @@ const renderHabits = (habits) => {
     const habitList = document.getElementById('habit_list')
 
     habitList.innerHTML = habits.map(habit => {
-        return `<li>${habit.name} ${habit.targetStreak}</li>`
+        return `<li>${habit.name}, ${habit.targetStreak}</li>`
     }).join('\n')
 }
-
