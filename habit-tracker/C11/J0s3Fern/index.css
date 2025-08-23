@@ -1,0 +1,35 @@
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habit_form {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+    background-color: #f9f9f9;
+    display: flex;           /* Add these lines */
+    flex-direction: column;  /* Stack children vertically */
+    gap: 10px;               /* Optional: adds space between fields */
+}
+
+.habit_card  {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    height: 10vh;           /* Full viewport height */
+}
+

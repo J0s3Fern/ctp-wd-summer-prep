@@ -23,7 +23,7 @@ const renderHabits = (habits) => {
 
     habitList.innerHTML = habits.map((habit, idx) => {
         return `
-            <li>
+            <li class="habit_card">
                 ${habit.name}, ${habit.targetStreak}
                 <button class="edit-btn" data-idx="${idx}">Edit</button>
                 <button class="delete-btn" data-idx="${idx}">Delete</button>
